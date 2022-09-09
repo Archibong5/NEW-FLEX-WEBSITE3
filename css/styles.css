@@ -1,0 +1,164 @@
+body{
+
+  font-family: sans-serif;
+  margin: 0;
+}
+html{
+  box-sizing: border-box;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+.top{
+  height: 600px;
+  background-image: url(https://global-uploads.webflow.com/5e0ac69bad6badc677c5db21/60c030214d19547a7c6e74e9_n2Ai81S_aciRuuCqe7oCiQ5a1sVM5lekh6ZzHgACdLaF-h7HbkrlNSn_McFL9DASwsZGEspjN0edxhYfrQ64mVbWq7Jjd6qtJBOoYh6MYGc7Tmg9AtswIQfv0AZGFkihUmwlHMgJ.jpeg);
+  background-repeat: no-repeat;
+  color: white;
+  text-shadow: 2px 2px 4px royalblue;
+  margin: 0;
+}
+.flex-nav{
+  background-image: linear-gradient(120deg, darkviolet, royalblue, crimson);
+
+  list-style: none;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+
+}
+
+.flex-link{
+  color: white;
+  margin: 0 10px;
+  text-decoration: overline;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px navy;
+}
+
+
+/* FLEX */
+.flex-nav{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+/* ANOTHER CSS */
+.circle{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: repeating-conic-gradient(red 10%, blue 20%, yellow 30%);
+}
+
+.circle2{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-image: repeating-conic-gradient(red 0deg 10deg, blue 10deg 20deg, yellow 20deg 30deg);
+}
+
+.middle{
+  display: flex;
+}
+.details{
+  flex: 60%;
+  font-size: 1.2rem;
+  background-image: linear-gradient(120deg, darkviolet, royalblue, crimson);
+  color: white;
+}
+.shape{
+  flex: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid red;
+  justify-content: space-around;
+  background-image: linear-gradient(120deg, orange, royalblue, lawngreen);
+
+
+}
+
+/* CARD */
+.package{
+  color: white;
+  text-shadow: 2px 2px 5px darkviolet;
+  font-size: 2rem;
+}
+
+.customer{
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px crimson;
+  font-size: 1.5rem;
+}
+
+
+.features{
+  list-style: none;
+  line-height: 2;
+
+}
+
+li{
+  border-bottom: 1px solid black;
+  margin: 10px;
+  color: white;
+  letter-spacing: 2;
+}
+.price{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px darkorange;
+}
+
+.cta{
+  font-size: 2rem;
+  text-decoration: none;
+ /* background-image: linear-gradient(120deg,navy, darkviolet, crimson); */
+ font-weight: bold;
+ color: white;
+ text-shadow: 2px 2px 5px navy;
+}
+
+.cta:hover{
+  background-image: linear-gradient(120deg,navy, darkviolet, crimson);
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px navy;
+
+
+}
+
+
+/* FLEX */
+.pricing-grid{
+  display: flex;
+  max-height: 800px;
+  /* border: 5px solid red; */
+  margin: 30px auto;
+  justify-content: space-between;
+
+}
+
+.plan{
+  border: 3px solid red;
+  margin: 0 10px;
+  padding: 20px;
+  text-align: center;
+  background-image: linear-gradient(120deg, orange, royalblue, lawngreen);
+
+
+}
+
+
+@media (max-width: 800px) {
+  .pricing-grid{
+    flex-wrap: wrap;
+  }
+  .middle{
+    flex-wrap: wrap;
+  }
+
+}
